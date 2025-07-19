@@ -18,14 +18,18 @@ question,answer
 これはカジュアルに取り入れられるでしょう。
 # QAPツール
 ## qap-cli
-Lua5.4と`ftcsv`ライブラリが必要です。
+Lua5.1以降(LuaJIT含む)と`ftcsv`ライブラリが必要です。
+
+Lua5.1/LuaJITの場合は`utf8`ライブラリも必要です。
 
 使い方: `lua qap-webui.lua {QAPのCSVファイルへのパス} 質問`
 
 編集距離を用いて最も近い質問とその答えのペアを表示します。
 
 ## qap-webui
-Lua5.4と`ftcsv`, `quinku`, `lunajson`ライブラリが必要です。(`luasocket`は`quinku`の依存関係で取得されます)
+Lua5.1以降(LuaJIT含む)と`ftcsv`, `quinku`, `lunajson`ライブラリが必要です。(`luasocket`は`quinku`の依存関係で取得されます)
+
+Lua5.1/LuaJITの場合は`utf8`ライブラリも必要です。
 
 使い方: `lua qap-webui.lua {QAPのCSVファイルへのパス}`
 
